@@ -5,7 +5,18 @@
   Once you've implemented the logic, test your code by running
 */
 
-function countVowels(str) {
+function countVowels(str1) {
+  let str = str1.toLowerCase();
+  let l = str.length;
+  let count =0;
+  for(let i =0;i<l;i++)
+  {
+    if(str[i] === "a" || str[i] ==="e" || str[i] === "i" || str[i] === "o" || str[i] ==="u")
+    {
+      count++;
+    }
+  }
+  return count;
     // Your code here
 }
 
